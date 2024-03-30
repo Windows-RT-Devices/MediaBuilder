@@ -8,3 +8,5 @@ MBStartUpActionsMsg=
 MBStartUpActionsRun=
 MBStartUpActionsRunScript=True
 MBStartUpActionsExit=
+OnlyUseLatestCLR=True
+FODInstallDotNet35=False
