@@ -1,0 +1,5 @@
+###### Media Builder Update Info ######
+- Updated Tegra Jailbreak USB to v1.61.
+- Added requested option to ignore not enough free space errors on start-up (not recommended).
+- Minor Fixes.
+- This update will cause any custom settings to be reset.
