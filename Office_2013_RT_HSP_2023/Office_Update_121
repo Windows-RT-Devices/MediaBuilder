@@ -1,0 +1,4 @@
+###### Media Builder Update Info ######
+20th October 2023
+- Cleanup.cmd and Build.cmd can no longer be run at the same time.
+- Added an option to disable startup checks for script and download list updates.
