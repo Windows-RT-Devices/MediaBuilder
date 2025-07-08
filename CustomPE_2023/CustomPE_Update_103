@@ -1,0 +1,4 @@
+###### Media Builder Update Info ######
+31st July 2024
+- Added option to write a Tegra Jailbreak USB.
+- Added requested option to ignore not enough free space errors on start-up (not recommended).
