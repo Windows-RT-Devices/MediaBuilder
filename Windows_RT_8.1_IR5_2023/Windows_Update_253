@@ -1,0 +1,5 @@
+###### Media Builder Update Info ######
+4th July 2024
+- Added aria2 version 1.37.0.
+- Default download mode switched to Torrent when available.
+- If the output install.wim is larger than 4GB then ESD mode will be used automatically.
