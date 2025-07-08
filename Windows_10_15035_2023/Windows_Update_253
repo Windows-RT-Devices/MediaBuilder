@@ -1,0 +1,5 @@
+###### Media Builder Update Info ######
+4th July 2024
+- Updated aria2 to version 1.37.0.
+- Default download mode switched to Torrent when available.
+- OnlyUseLatestCLR option enabled for .NET Framework.
