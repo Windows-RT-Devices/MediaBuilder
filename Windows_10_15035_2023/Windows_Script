@@ -118,10 +118,21 @@ For /l %%g in (!MBVerNumberP1!,1,!MBUpdateVerNumber!) do (
 
 If exist "%CD%\UpgradeInfo.cmd" call "%CD%\UpgradeInfo.cmd"
 
+For %%a in (!MBUpdateInfoList!) do (
+	Set /a MBUpdateInfoListLines+=1
+	If !MBUpdateInfoListLines! GTR 22 Set /a ExtraConsoleLines+=1
+)
+
+If Defined ExtraConsoleLines (
+	For /f "usebackq delims=" %%l in (`powershell.exe -NoProfile -Command "[console]::WindowHeight"`) do Set ConsoleLines=%%l
+	Set /a ExpandConsoleLines=!ConsoleLines! + %ExtraConsoleLines%
+	If !ExpandConsoleLines! GTR 30 Mode Con Lines=!ExpandConsoleLines!
+)
+
 :UpdateScriptMenu
 cls
-rem echo %white%%ul%________________________________________________________________________________________________________________________%ef%
-rem echo.
+echo %white%%ul%________________________________________________________________________________________________________________________%ef%
+echo.
 echo %white%Media Builder Update%ef%
 echo.
 For %%a in (!MBUpdateInfoList!) do (
@@ -135,6 +146,7 @@ If /i "!MBUpdateConfirmPrompt!"=="N" Set MBUpdateConfirm=False
 If "%MBUpdateConfirm%" == "" goto UpdateScriptMenu
 echo %ul%________________________________________________________________________________________________________________________%ef%
 If "%MBUpdateConfirm%" == "False" (
+	If Defined ExtraConsoleLines Mode Con Lines=%ConsoleLines%
 	cls
 	echo Please wait...
 	goto SkipUpdateScript

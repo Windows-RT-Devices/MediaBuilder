@@ -1,8 +1,8 @@
 ###### Media Builder Configuration ######
 MBMessage=
 MBMessageColour=green
-MBLatestVersion=256
-MBLatestTestVersion=256
+MBLatestVersion=257
+MBLatestTestVersion=257
 MBStartUpActions=True
 MBStartUpActionsMsg=
 MBStartUpActionsRun=

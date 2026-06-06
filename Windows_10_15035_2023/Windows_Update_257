@@ -1,0 +1,4 @@
+###### Media Builder Update Info ######
+6th June 2026
+- Added an option to install the Audit Mode Policy which will disable CodeIntegrity (Credit to @kristibek).
+- Corrected an occasional failure when checking the size of Media Builder output.
