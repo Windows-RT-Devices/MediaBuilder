@@ -1,0 +1,3 @@
+###### Media Builder Update Info ######
+26th July 2024
+- Replaced aria2 with tget v0.1 due to issues with some archive.org torrent files (x86/x64 only).
